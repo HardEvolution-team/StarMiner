@@ -1,0 +1,31 @@
+{
+  "required": true,
+  "package": "com.electrifiedded.starminer.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "target": "@env(DEFAULT)",
+  "mixins": [
+    "EntityAccessor",
+    "EntityLivingAccessor",
+    "EntityLivingBaseAccessor",
+    "MixinBlockLiquid",
+    "MixinEntity",
+    "MixinEntityItem",
+    "MixinEntityLiving",
+    "MixinEntityLivingBase",
+    "MixinEntityPlayer",
+    "MixinItem",
+    "MixinNetHandlerPlayServer"
+  ],
+  "client": [
+    "client.MixinEntityPlayerSP",
+    "client.MixinEntityRenderer",
+    "client.MixinRenderGlobal",
+    "client.MixinRenderLivingBase"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "setSourceFile": true,
+  "minVersion": "0.8.7"
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "starminer:items/gcontroler_a"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "starminer:reversed": 1
+      },
+      "model": "starminer:item/gravitycontroller_reversed"
+    }
+  ]
+}

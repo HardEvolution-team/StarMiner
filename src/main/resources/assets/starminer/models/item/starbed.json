@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "starminer:items/starbed",
+    "layer1": "starminer:items/starmark"
+  }
+}

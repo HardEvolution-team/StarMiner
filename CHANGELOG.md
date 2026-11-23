@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.9.13
+- Fixed a startup crash/mixin conflict with Cave Biomes API (both mods modified the same void-height constant in Entity); the star void check is now a plain inject.
+
+## 0.9.12
+- Fixed chunks disappearing/culling wrongly while standing on star sides (rotated gravity): terrain setup now uses the real eye position. Skipped automatically when Celeritas/Sodium-style renderers are installed.
+
+## 0.9.11
+- **No original assets are bundled any more.** Textures are read at runtime from your own copy of the original `starminer1710-0.9.9.jar` in `.minecraft/archaic_originals/` (via ArchaicLib).
+- License changed to HE-RSAL 1.1; source published on GitHub.
+
 ## 0.9.10
 - Fixed the player freezing / getting stuck while walking on stars: collisions in rotated gravity now tolerate rounding errors, so the hitbox no longer sinks 1 ulp into the ground and blocks all sideways movement.
 - Fixed the server rubber-banding players on star sides ("moved wrongly"): vanilla only ignores the world-Y error, which is the wrong axis under sideways gravity.

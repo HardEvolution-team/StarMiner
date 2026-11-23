@@ -11,9 +11,7 @@ import net.minecraft.util.math.Vec3d;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
@@ -130,8 +128,10 @@ public abstract class MixinEntity implements IGravityHolder {
       }
    }
 
-   @ModifyConstant(method = "onEntityUpdate", constant = @Constant(doubleValue = -64.0))
-   private double starminer$voidKillHeight(double original) {
-      return -512.0;
+   @Inject(method = "outOfWorld", at = @At("HEAD"), cancellable = true)
+   private void starminer$voidKillHeight(CallbackInfo ci) {
+      if (((Entity)(Object)this).posY > -512.0) {
+         ci.cancel();
+      }
    }
 }

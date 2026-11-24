@@ -9,7 +9,7 @@ import net.minecraft.world.chunk.ChunkPrimer;
 
 public class MapGenAsteroidBelt {
    private static final int RANGE = 8;
-   private final Random rand = new Random();
+   private final Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
 
    public void generate(World world, int xChunkPos, int zChunkPos, ChunkPrimer primer) {
       this.rand.setSeed(world.getSeed());

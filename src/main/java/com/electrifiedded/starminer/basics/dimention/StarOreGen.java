@@ -10,7 +10,7 @@ import net.minecraftforge.event.terraingen.OreGenEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class StarOreGen {
-   private final Random rand = new Random();
+   private final Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
    private WorldGenMinable genOuterCore;
    private WorldGenMinable genInnerCore;
 

@@ -1,0 +1,18 @@
+{
+  "_comment": "Where ArchaicLib downloads the original files of this port from. Edit freely; set locked=true to keep your edits when the mod updates. Files go to archaic_originals/ and are checked by sha256.",
+  "port": "starminer",
+  "version": 3,
+  "locked": false,
+  "files": [
+    {
+      "file": "starminer1710-0.9.9.jar",
+      "name": "starminer1710-0.9.9.jar - Starminer 0.9.9 for 1.7.10 (by ARUBE)",
+      "sha256": "7c89d50fb4b9d8a7c9de628ce9b7119c40819d706fe2426c0960883c56da210b",
+      "size": 509231,
+      "page": "https://mcarchive.net/mods/starminer",
+      "mirrors": [
+        "https://b2.mcarchive.net/file/mcarchive/7c89d50fb4b9d8a7c9de628ce9b7119c40819d706fe2426c0960883c56da210b/Starminer1710-0.9.9.jar"
+      ]
+    }
+  ]
+}

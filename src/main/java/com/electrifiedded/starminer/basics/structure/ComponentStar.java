@@ -26,7 +26,7 @@ public class ComponentStar extends StructureComponent {
    private int ringRad;
    private int centerY;
    private int starSeed;
-   private final Random rand = new Random();
+   private final Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
 
    private static final Block[] BEDROCK_BLOCKS = {Blocks.DIRT, Blocks.SANDSTONE, Blocks.COBBLESTONE, Blocks.STONE, Blocks.NETHERRACK, Blocks.SPONGE, Blocks.CLAY};
    private static final Block[] ORE_BLOCKS = {Blocks.GLOWSTONE, Blocks.COAL_ORE, Blocks.IRON_ORE, Blocks.REDSTONE_ORE, Blocks.GLOWSTONE, Blocks.LAPIS_ORE};
